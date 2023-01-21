@@ -2,8 +2,11 @@ import { useState } from 'react';
 import './App.css';
 import Buttons from './components/Buttons';
 import Process from './components/Process';
+import Social from './components/Social';
 import { FiDownload } from 'react-icons/fi';
 import { HiOutlineArrowSmRight } from 'react-icons/hi';
+
+// * NOTE - Change styles to theme
 
 const styles = {
   color: {
@@ -18,6 +21,7 @@ const styles = {
     'primary-900': '#210C33',
   },
   blends: {
+    'gray-white': '#FFFFFF',
     'gray-50': '#F0F1F3',
     'gray-100': '#E6E8EB',
     'gray-200': '#C3C7CE',
@@ -34,16 +38,10 @@ const styles = {
 function App() {
   return (
     <div className="App">
-      <Process
-        c1={styles.color['primary-500']}
-        c2={styles.blends['gray-600']}
-        c3={styles.blends['gray-900']}
-        title="1. Research"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-        aliquet, nisl vitae ultricies lacinia, nisl nisl aliquet nisl, et
-        aliquet nisl nisl sit amet lorem. Sed euismod, nisl vitae ultricies
-        lacinia, nisl nisl aliquet nisl, et aliquet nisl nisl sit amet lorem."
-      />
+      {/* <Social
+        c={styles.color['primary-500']}
+        bg={styles.blends['gray-white']}
+      /> */}
     </div>
   );
 }
