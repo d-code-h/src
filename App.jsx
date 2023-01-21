@@ -3,6 +3,7 @@ import './App.css';
 import Buttons from './components/Buttons';
 import Process from './components/Process';
 import Social from './components/Social';
+import Blog from './components/Blog';
 import { FiDownload } from 'react-icons/fi';
 import { HiOutlineArrowSmRight } from 'react-icons/hi';
 
@@ -42,6 +43,7 @@ function App() {
         c={styles.color['primary-500']}
         bg={styles.blends['gray-white']}
       /> */}
+      <Blog c={styles.blends['gray-400']} blogC={styles.blends['gray-50']} />
     </div>
   );
 }
