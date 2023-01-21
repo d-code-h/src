@@ -5,6 +5,7 @@ import Process from './components/Process';
 import Social from './components/Social';
 import Blog from './components/Blog';
 import Pagination from './components/Pagination';
+import Logo from './components/Logo';
 import { FiDownload } from 'react-icons/fi';
 import { HiOutlineArrowSmRight } from 'react-icons/hi';
 
@@ -49,6 +50,7 @@ function App() {
         c1={styles.color['primary-900']}
         c2={styles.blends['gray-200']}
       /> */}
+      <Logo bg={styles.color['primary-500']} c={styles.blends['gray-900']} />
     </div>
   );
 }
