@@ -30,6 +30,7 @@ const SocialIcon = styled.div`
   &:hover {
     background-color: ${(props) => props.bg};
     color: ${(props) => props.c};
+    box-shadow: 0px 12px 64px rgba(28, 25, 25, 0.12);
   }
 `;
 export default function Social({ c, bg }) {
