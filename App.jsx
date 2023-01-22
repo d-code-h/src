@@ -1,17 +1,20 @@
 import { useState } from 'react';
 import './App.css';
-import Buttons from './components/Buttons';
-import Process from './components/Process';
-import Social from './components/Social';
-import Blog from './components/Blog';
-import Pagination from './components/Pagination';
-import Logo from './components/Logo';
+import Context from './Context';
+// import Buttons from './components/Buttons';
+// import Process from './components/Process';
+// import Social from './components/Social';
+// import Blog from './components/Blog';
+// import Pagination from './components/Pagination';
+// import Logo from './components/Logo';
+import Header from './components/Header';
+import Hero from './components/Hero';
 import { FiDownload } from 'react-icons/fi';
 import { HiOutlineArrowSmRight } from 'react-icons/hi';
 
 // * NOTE - Change styles to theme
 
-const styles = {
+const theme = {
   color: {
     'primary-100': '#EDD8FF',
     'primary-200': '#DBB1FF',
@@ -41,6 +44,10 @@ const styles = {
 function App() {
   return (
     <div className="App">
+      <Context.Provider value={theme}>
+        <Header />
+        <Hero />
+      </Context.Provider>
       {/* <Social
         c={styles.color['primary-500']}
         bg={styles.blends['gray-white']}
@@ -50,7 +57,7 @@ function App() {
         c1={styles.color['primary-900']}
         c2={styles.blends['gray-200']}
       /> */}
-      <Logo bg={styles.color['primary-500']} c={styles.blends['gray-900']} />
+      {/* <Logo bg={styles.color['primary-500']} c={styles.blends['gray-900']} /> */}
     </div>
   );
 }
