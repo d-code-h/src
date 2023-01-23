@@ -16,7 +16,6 @@ const Brand = styled.span`
   line-height: 56px;
   color: #ffffff;
   padding: 0 20px;
-  width: 16px;
   height: 56px;
   background-color: ${(props) => props.bg};
   text-align: center;
