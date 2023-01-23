@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Context from '../Context';
 import Container from '../utils/Container';
 import Button from '../utils/Buttons';
+import Profile from '../utils/Profile';
 
-import HeroImg from '../assets/images/hero.png';
 import BgImg from '../assets/images/bg.png';
 
 const StyledHero = styled.div`
@@ -25,24 +25,6 @@ const HeroSection = styled.div`
   flex-direction: column;
   gap: 100px;
   width: 50%;
-`;
-
-const HeroImage = styled.div`
-  width: 100%;
-  height: 560px;
-  padding: 10px 5px 0 5px;
-  background-color: #ffffff;
-  border-radius: 25px;
-  box-shadow: 0px 24px 116px rgba(43, 56, 76, 0.09);
-`;
-const Image = styled.img.attrs((props) => ({
-  src: props.src,
-}))`
-  width: 100%;
-  height: 100%;
-  margin-right: -70px;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
 `;
 
 const HeroInfo = styled.section``;
@@ -143,10 +125,7 @@ export default function Hero() {
               ))}
             </HeroStatus>
           </HeroSection>
-
-          <HeroImage>
-            <Image src={HeroImg} />
-          </HeroImage>
+          <Profile />
         </HeroContent>
       </Container>
     </StyledHero>
