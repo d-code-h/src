@@ -68,6 +68,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+}
 body {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
